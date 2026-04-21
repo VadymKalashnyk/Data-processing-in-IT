@@ -1,4 +1,4 @@
-package com.gallery.backend; // Змініть на вашу назву пакету, якщо вона інша!
+package com.gallery.backend;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;

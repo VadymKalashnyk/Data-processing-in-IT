@@ -1,4 +1,4 @@
-package com.gallery.backend; // Змініть на вашу назву пакету!
+package com.gallery.backend;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

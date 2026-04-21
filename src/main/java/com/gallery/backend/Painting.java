@@ -1,4 +1,4 @@
-package com.gallery.backend; // Перевірте, щоб назва пакету збігалася з вашою!
+package com.gallery.backend;
 
 import jakarta.persistence.*;
 import lombok.*;
@@ -17,5 +17,5 @@ public class Painting {
     private String title;
     private String artist;
     private String description;
-    private String imageUrl; // Якщо ви використовували 'image' замість 'imageUrl', змініть тут
+    private String imageUrl;
 }
