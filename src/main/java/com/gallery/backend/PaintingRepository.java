@@ -1,8 +1,9 @@
-package com.gallery.backend;
+package com.gallery.backend; // Ваша назва пакету
 
 import org.springframework.data.jpa.repository.JpaRepository;
-import org.springframework.stereotype.Repository;
+import org.springframework.data.rest.core.annotation.RepositoryRestResource;
 
-@Repository
+// Ця анотація каже Spring: "Створи автоматично всі CRUD ендпоінти за адресою /api/paintings"
+@RepositoryRestResource(path = "paintings")
 public interface PaintingRepository extends JpaRepository<Painting, Long> {
 }
