@@ -4,16 +4,14 @@ import jakarta.persistence.*;
 import lombok.*;
 
 @Entity
+@Data // Генерує геттери, сеттери, toString
+@NoArgsConstructor
+@AllArgsConstructor
 @Table(name = "paintings")
-@Data // Ця анотація автоматично створює всі гетери, сетери, toString та equals
-@NoArgsConstructor // Автоматично створює порожній конструктор
-@AllArgsConstructor // Автоматично створює конструктор з усіма полями
 public class Painting {
-
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-
     private String title;
     private String artist;
     private String description;
